@@ -1,0 +1,12 @@
+RJ Hunter
+AD 440
+Date: 3/16/16
+
+What have you completed since the last report?
+I worked with both client teams in class to hook up our API to their applications.  I also updated the parameters on a couple of our API methods, so the API could process requests without tags.
+
+What do you plan to complete by the next report?
+I plan to continue to work with the Web and Mobile client teams to answer any questions they have regarding the API so they are successful in their implementations.  I also plan to help my team finish the documentation and complete our API web test page.
+
+What is getting in your way?
+There is nothing getting in my way of completing my portion of the project.  
