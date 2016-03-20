@@ -1,0 +1,12 @@
+RJ Hunter
+AD 440
+Date: 3/18/16
+
+What have you completed since the last report?
+I worked with Jesse on a web test framework for our API to demonstrate functionality during our final presentation.  
+
+What do you plan to complete by the next report?
+I plan to help my team finish the documentation.
+
+What is getting in your way?
+There is nothing getting in my way of completing my portion of the project.  
