@@ -1,0 +1,12 @@
+RJ Hunter
+AD 440
+Date: 3/21/16
+
+What have you completed since the last report?
+I finished commenting our code and sent our team a final version of the app.
+
+What do you plan to complete by the next report?
+I plan to present our finished API during class on Tuesday.
+
+What is getting in your way?
+There is nothing getting in my way of completing my portion of the project. Our API is complete and ready for delivery.   
