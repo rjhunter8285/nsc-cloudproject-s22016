@@ -1,27 +1,41 @@
-/getImages (Get)
-* timestamp - timestamp (string, ex.2016-02-010T19:47:04.009533)
-* tags [] - list of tags (list[string])
-* username - username from twitter (string)
-* oAuth token - oauth token from twitter (string)
-* oAuth secret - oauth secret from twitter (string)
+GET IMAGES:
+URL: /getImages
+METHOD: GET
+HEADER PARAMETERS:
+  Key: timestamp  Value: timestamp, string (**optional**, only needed for pagination)
+  Key: tags       Value: tags with comma delimiter, string (**optional**, ex: urgent,report,taxes)
+  Key: username   Value: username, must be one word, string (ex: rjhunter)
+  Key: prev       Value: true, string (**optional**, for getting previous page of images, use with timestamp)
+  Key: token      Value: twitter user token from oauth, string
+  Key: secret     Value: twitter user secret from oauth, string
 
-/uploadImage(Post)
-* tags [] - list of tags (list[string])
-* file name - name of file (string)
-* blob - blob stream (blob)
-* username - username from twitter (string)
-* oAuth token - oauth token from twitter (string)
-* oAuth secret - oauth secret from twitter (string)
 
-/deleteImage (Delete)
-* image url - image url to be deleted (string)
-* username - username from twitter (string)
-* oAuth token - oauth token from twitter (string)
-* oAuth secret - oauth secret from twitter (string)
+UPLOAD IMAGE:
+URL: /uploadImage
+METHOD: POST
+HEADER PARAMETERS:
+  Key: username   Value: username, must be one word, string (ex: rjhunter)
+  Key: filename   Value: file name, string (ex: report OR report.jpg)
+  Key: tags       Value: tags with comma delimiter, string (**optional**, ex: urgent,report,taxes)
+  Key: token      Value: twitter user token from oauth, string
+  Key: secret     Value: twitter user secret from oauth, string
+BODY PARAMETER:
+  image file, **must be encoded in base64**
 
-/updateTags (Put)
-* image url - image url to be deleted (string)
-* tags [] - list of tags (list[string])
-* username - username from twitter (string)
-* oAuth token - oauth token from twitter (string)
-* oAuth secret - oauth secret from twitter (string)
+
+DELETE IMAGE:
+URL: /deleteImage
+METHOD: DELETE
+HEADER PARAMETERS:
+  Key: blobURL    Value: blob url, string (ex: https://ad440storage.blob.core.windows.net/fin/2016-03-12220619904617_test)
+  Key: token      Value: twitter user token from oauth, string
+  Key: secret     Value: twitter user secret from oauth, string
+
+UPDATE TAGS:
+URL: /updateTags
+METHOD: PUT
+HEADER PARAMETERS:
+  Key: blobURL    Value: blob url, string (ex: https://ad440storage.blob.core.windows.net/fin/2016-03-12220619904617_test)
+  Key: tags       Value: tags with comma delimiter, string, must send all tags associated with image (**optional**, ex: urgent,report,taxes) 
+  Key: token      Value: twitter user token from oauth, string
+  Key: secret     Value: twitter user secret from oauth, string
